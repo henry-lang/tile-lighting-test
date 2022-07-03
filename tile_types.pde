@@ -5,17 +5,17 @@ class TileTypes {
   public final byte GREEN_LIGHT = 3;
   public final byte BLUE_LIGHT = 4;
   
-  public final color[] colors;
+  public final PImage[] textures;
   public final boolean[] emits;
   public final color[] lightColor;
  
   public TileTypes() {
-    colors = new color[256];
-    colors[AIR] = color(10, 250, 255);
-    colors[STONE] = color(48);
-    colors[RED_LIGHT] = color(255, 0, 0);
-    colors[GREEN_LIGHT] = color(0, 255, 0);
-    colors[BLUE_LIGHT] = color(0, 0, 255);
+    textures = new PImage[256];
+    textures[AIR] = loadImage("air.png");
+    textures[STONE] = loadImage("stone.png");
+    textures[RED_LIGHT] = loadImage("red_light.png");
+    textures[GREEN_LIGHT] = loadImage("green_light.png");
+    textures[BLUE_LIGHT] = loadImage("blue_light.png");
     
     emits = new boolean[256];
     emits[AIR] = true;
