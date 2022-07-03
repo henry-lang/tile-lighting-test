@@ -29,7 +29,5 @@ class TileTypes {
     lightColor[RED_LIGHT] = color(255, 0, 0);
     lightColor[GREEN_LIGHT] = color(0, 255, 0);
     lightColor[BLUE_LIGHT] = color(0, 0, 255);
-    
-    
   }
 }

@@ -66,6 +66,11 @@ void drawTiles() {
 
 void calculateLighting() {
   long start = System.currentTimeMillis();
+  for(var x = 0; x < lighting.length; x++) {
+    for(var y = 0; y < lighting[x].length; y++) {
+      lighting[x][y] = color(0);
+    }
+  }
   for(var x = 0; x < tiles.length; x++) {
     for(var y = 0; y < tiles[x].length; y++) {
       var type = tiles[x][y];
